@@ -19,14 +19,14 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 * [java Code](#java-code)
 * [Detailed Visualization](#detailed-visualization)
 #### Other Language Code
-* [C++](#what-is-tower-of-hanoi)
-* [java](#rules)
-* [Python](#algorithm)
-* [C#](#code-remember-tips)
-* [PHP](#java-code)
-* [Javascript](#detailed-visualization)
+* [C++](#c-plus)
+* [java](#java)
+* [Python](#python)
+* [C#](#c-sharp)
+* [PHP](#php)
+* [Javascript](#javascript)
 #### Recursion Details 
-* [Learn here](#detailed-visualization)
+* [Recursion Learn here](#recursion-learn-here)
 
 *******
 #### What is Tower of Hanoi
@@ -150,7 +150,8 @@ transfer disk 1 from S to D
         <img src="https://github.com/Subham-Maity/java-recursion-and-backtracking/blob/master/image(ignore)/towerofhanoi.png?raw=true"/>
         </p>
 
-## C++
+## C Plus 
+## C++ 
 ```cpp
 // C++ recursive function to
 // solve tower of hanoi puzzle
@@ -225,6 +226,7 @@ n = 4
 TowerOfHanoi(n, 'A', 'C', 'B')
 # A, C, B are the name of rods
 ```
+## C Sharp 
 ## C#
 ```cs
 
@@ -337,3 +339,6 @@ function towerOfHanoi(n, from_rod,  to_rod,  aux_rod)
 // This code is contributed by gauravrajput1
 </script>
 ```
+# Recursion Learn here
+
+# [Click here](https://github.com/Subham-Maity/java-recursion-and-backtracking)
