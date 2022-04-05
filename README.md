@@ -149,3 +149,82 @@ transfer disk 1 from S to D
 <p align="center">
         <img src="https://github.com/Subham-Maity/java-recursion-and-backtracking/blob/master/image(ignore)/towerofhanoi.png?raw=true"/>
         </p>
+
+## C++
+```cpp
+// C++ recursive function to
+// solve tower of hanoi puzzle
+#include <bits/stdc++.h>
+using namespace std;
+ 
+void towerOfHanoi(int n, char from_rod,
+                    char to_rod, char aux_rod)
+{
+    if (n == 0)
+    {
+        return;
+    }
+    towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+    cout << "Move disk " << n << " from rod " << from_rod <<
+                                " to rod " << to_rod << endl;
+    towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+}
+ 
+// Driver code
+int main()
+{
+    int n = 4; // Number of disks
+    towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
+    return 0;
+}
+ 
+```
+## java
+```java
+// JAVA recursive function to
+// solve tower of hanoi puzzle
+import java.util.*;
+import java.io.*;
+import java.math.*;
+class GFG
+{
+static void towerOfHanoi(int n, char from_rod,
+                    char to_rod, char aux_rod)
+{
+    if (n == 0)
+    {
+        return;
+    }
+    towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+    System.out.println("Move disk "+ n + " from rod " +
+                       from_rod +" to rod " + to_rod );
+    towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+}
+ 
+// Driver code
+public static void  main(String args[])
+{
+    int n = 4; // Number of disks
+    towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
+}
+}
+```
+## Python
+```py
+# Recursive Python function to solve tower of hanoi
+ 
+def TowerOfHanoi(n , from_rod, to_rod, aux_rod):
+    if n == 0:
+        return
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)
+    print("Move disk",n,"from rod",from_rod,"to rod",to_rod)
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)
+         
+# Driver code
+n = 4
+TowerOfHanoi(n, 'A', 'C', 'B')
+# A, C, B are the name of rods
+```
+## C#
+## PHP
+## Javascript
