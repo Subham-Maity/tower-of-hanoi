@@ -186,7 +186,7 @@ int main()
 import java.util.*;
 import java.io.*;
 import java.math.*;
-class GFG
+class CodeXam
 {
 static void towerOfHanoi(int n, char from_rod,
                     char to_rod, char aux_rod)
@@ -226,5 +226,114 @@ TowerOfHanoi(n, 'A', 'C', 'B')
 # A, C, B are the name of rods
 ```
 ## C#
+```cs
+
+// C# recursive program to solve tower of hanoi puzzle
+using System;
+class CodeXam
+{
+    static void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)
+    {
+        if (n == 0)
+        {
+            return;
+        }
+        towerOfHanoi(n-1, from_rod, aux_rod, to_rod);
+        Console.WriteLine("Move disk " + n + " from rod " + 
+                          from_rod + " to rod " + to_rod);
+        towerOfHanoi(n-1, aux_rod, to_rod, from_rod);
+    }
+     
+    //  Driver method
+    public static void Main(String []args)
+    {
+        int n = 4; // Number of disks
+        towerOfHanoi(n, 'A', 'C', 'B');  // A, B and C are names of rods
+    }
+}
+```
 ## PHP
+```php
+<?php
+ 
+// Tower of Hanoi (n-disk) algorithm in PHP with Display of Pole/rod
+// Contents the 3 poles representation
+$poles = array(array(), array(), array());
+ 
+function TOH($n, $A="A", $B="B", $C="C"){
+     
+    if ($n > 0){
+        TOH($n-1, $A, $C, $B);
+        echo "Move disk from rod $A to rod $C \n";
+        move($A, $C);
+        dispPoles();
+        TOH($n-1, $B, $A, $C);
+    }
+    else {
+        return;
+    }
+}
+ 
+function initPoles($n){
+    global $poles;
+ 
+    for ($i=$n; $i>=1; --$i){
+        $poles[0][] = $i;
+    }
+}
+ 
+ 
+function move($source, $destination){
+    global $poles;
+     
+    // get source and destination pointers
+    if ($source=="A") $ptr1=0;
+    elseif ($source=="B") $ptr1 = 1;
+    else $ptr1 = 2;
+     
+    if ($destination=="A") $ptr2 = 0;
+    elseif ($destination=="B") $ptr2 = 1;
+    else $ptr2 = 2;
+     
+    $top = array_pop($poles[$ptr1]);
+    array_push($poles[$ptr2], $top);
+}
+ 
+function dispPoles(){ 
+    global $poles;
+    echo "A: [".implode(", ", $poles[0])."] ";
+    echo "B: [".implode(", ", $poles[1])."] ";
+    echo "C: [".implode(", ", $poles[2])."] ";
+    echo "\n\n";
+}
+ 
+$numdisks = 4;
+initPoles($numdisks);
+echo "Tower of Hanoi Solution for $numdisks disks: \n\n";
+dispPoles();
+TOH($numdisks);
+```
 ## Javascript
+```js
+<script>
+// javascript recursive function to
+// solve tower of hanoi puzzle
+function towerOfHanoi(n, from_rod,  to_rod,  aux_rod)
+{
+        if (n == 0)
+        {
+            return;
+        }
+        towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+        document.write("Move disk " + n + " from rod " + from_rod +
+        " to rod " + to_rod+"<br/>");
+        towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+    }
+ 
+    // Driver code
+    var n = 4; // Number of disks
+    towerOfHanoi(n, 'A', 'C', 'B'); // A, B and C are names of rods
+ 
+// This code is contributed by gauravrajput1
+</script>
+```
