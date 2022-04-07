@@ -18,6 +18,7 @@ I love Programming. One of the aims I had when I started ```CodeXam``` was to ma
 * [Code Remember Tip](#code-remember-tips)
 * [java Code](#java-code)
 * [Detailed Visualization](#detailed-visualization)
+* [Time Complexity](#time-complexity)
 #### Other Language Code
 * [C++](#c-plus)
 * [java](#java)
@@ -149,6 +150,13 @@ transfer disk 1 from S to D
 <p align="center">
         <img src="https://github.com/Subham-Maity/java-recursion-and-backtracking/blob/master/image(ignore)/towerofhanoi.png?raw=true"/>
         </p>
+
+#### **Time Complexity**
+<p align="center">
+        <img src="https://github.com/Subham-Maity/java-recursion-and-backtracking/blob/master/image(ignore)/timecomplexity%20.jpg?raw=true"/>
+        </p>
+
+
 
 ## C Plus 
 ## C++ 
